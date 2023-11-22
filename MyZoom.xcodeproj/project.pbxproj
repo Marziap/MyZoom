@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7F2EF7BE2B06655900404C25 /* MyZoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EF7BD2B06655900404C25 /* MyZoomApp.swift */; };
-		7F2EF7C02B06655900404C25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EF7BF2B06655900404C25 /* ContentView.swift */; };
 		7F2EF7C22B06655900404C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EF7C12B06655900404C25 /* Assets.xcassets */; };
 		7F2EF7C62B06655900404C25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EF7C52B06655900404C25 /* Preview Assets.xcassets */; };
+		7F65F39D2B0CE85100660516 /* JoinCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65F39C2B0CE85100660516 /* JoinCallView.swift */; };
+		7F8A09C82B0BF9EE000CB9B6 /* FirstScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A09C72B0BF9EE000CB9B6 /* FirstScreenView.swift */; };
+		7F8A09CA2B0BFCD4000CB9B6 /* ReunionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A09C92B0BFCD4000CB9B6 /* ReunionsView.swift */; };
+		7F8A09CC2B0C1717000CB9B6 /* NewReunionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A09CB2B0C1717000CB9B6 /* NewReunionModal.swift */; };
+		7FBF6B842B06AC9000362370 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 7FBF6B832B06AC9000362370 /* StreamVideo */; };
+		7FBF6B862B06AC9000362370 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7FBF6B852B06AC9000362370 /* StreamVideoSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F2EF7BA2B06655900404C25 /* MyZoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyZoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2EF7BD2B06655900404C25 /* MyZoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyZoomApp.swift; sourceTree = "<group>"; };
-		7F2EF7BF2B06655900404C25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F2EF7C12B06655900404C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F2EF7C32B06655900404C25 /* MyZoom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyZoom.entitlements; sourceTree = "<group>"; };
 		7F2EF7C52B06655900404C25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F65F39C2B0CE85100660516 /* JoinCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinCallView.swift; sourceTree = "<group>"; };
+		7F8A09C72B0BF9EE000CB9B6 /* FirstScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenView.swift; sourceTree = "<group>"; };
+		7F8A09C92B0BFCD4000CB9B6 /* ReunionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReunionsView.swift; sourceTree = "<group>"; };
+		7F8A09CB2B0C1717000CB9B6 /* NewReunionModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReunionModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBF6B862B06AC9000362370 /* StreamVideoSwiftUI in Frameworks */,
+				7FBF6B842B06AC9000362370 /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				7F2EF7BD2B06655900404C25 /* MyZoomApp.swift */,
-				7F2EF7BF2B06655900404C25 /* ContentView.swift */,
+				7F8A09C72B0BF9EE000CB9B6 /* FirstScreenView.swift */,
+				7F8A09C92B0BFCD4000CB9B6 /* ReunionsView.swift */,
+				7F8A09CB2B0C1717000CB9B6 /* NewReunionModal.swift */,
+				7F65F39C2B0CE85100660516 /* JoinCallView.swift */,
 				7F2EF7C12B06655900404C25 /* Assets.xcassets */,
 				7F2EF7C32B06655900404C25 /* MyZoom.entitlements */,
 				7F2EF7C42B06655900404C25 /* Preview Content */,
@@ -85,6 +98,10 @@
 			dependencies = (
 			);
 			name = MyZoom;
+			packageProductDependencies = (
+				7FBF6B832B06AC9000362370 /* StreamVideo */,
+				7FBF6B852B06AC9000362370 /* StreamVideoSwiftUI */,
+			);
 			productName = MyZoom;
 			productReference = 7F2EF7BA2B06655900404C25 /* MyZoom.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 7F2EF7B12B06655800404C25;
+			packageReferences = (
+				7FBF6B822B06AC9000362370 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
 			productRefGroup = 7F2EF7BB2B06655900404C25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2EF7C02B06655900404C25 /* ContentView.swift in Sources */,
+				7F65F39D2B0CE85100660516 /* JoinCallView.swift in Sources */,
 				7F2EF7BE2B06655900404C25 /* MyZoomApp.swift in Sources */,
+				7F8A09C82B0BF9EE000CB9B6 /* FirstScreenView.swift in Sources */,
+				7F8A09CA2B0BFCD4000CB9B6 /* ReunionsView.swift in Sources */,
+				7F8A09CC2B0C1717000CB9B6 /* NewReunionModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +297,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "audio room";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +336,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "audio room";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -359,6 +384,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FBF6B822B06AC9000362370 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FBF6B832B06AC9000362370 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FBF6B822B06AC9000362370 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		7FBF6B852B06AC9000362370 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FBF6B822B06AC9000362370 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F2EF7B22B06655800404C25 /* Project object */;
 }

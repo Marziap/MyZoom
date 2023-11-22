@@ -11,7 +11,7 @@ import SwiftUI
 struct MyZoomApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirstScreenView()
         }
     }
 }
