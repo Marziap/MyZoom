@@ -36,7 +36,7 @@ struct ReunionsView: View {
                             }
                         }).accessibilityLabel("New meeting")
                         
-                        Text("Nuova riunione")
+                        Text("New Meeting")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
@@ -64,7 +64,7 @@ struct ReunionsView: View {
                                 
                             }
                     }).accessibilityLabel("Join meeting")
-                        Text("Partecipa")
+                        Text("Join")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
@@ -90,9 +90,9 @@ struct ReunionsView: View {
                                     .foregroundStyle(Color.white)
                                 
                             }
-                    }).accessibilityLabel("Plan meeting")
+                    }).accessibilityLabel("Schedule")
                         
-                        Text("Pianifica")
+                        Text("Schedule")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
@@ -118,8 +118,8 @@ struct ReunionsView: View {
                                     .foregroundStyle(Color.white)
                                 
                             }
-                    }).accessibilityLabel("Share")
-                        Text("Condividi")
+                    }).accessibilityLabel("Share Screen")
+                        Text("Share Screen")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
@@ -135,7 +135,7 @@ struct ReunionsView: View {
                     Button(action: {
                         
                     }, label: {
-                        Text("Aggiungi un calendario")
+                        Text("Add a calendar")
                             .font(.title3)
                             .foregroundStyle(Color.blue)
                     })
@@ -144,10 +144,10 @@ struct ReunionsView: View {
   
                 Spacer()
                 
-                Text("Nessuna riunione imminente")
+                Text("No Upcoming Meetings")
                     .font(.title2)
                     .bold()
-                Text("Le riunioni pianificate saranno elencate qui")
+                Text("The scheduled meetings will be listed here")
                     .font(.title3)
                     .foregroundStyle(Color.gray)
                 
@@ -155,7 +155,7 @@ struct ReunionsView: View {
                 Spacer()
                 
             }.padding(.vertical, 10)
-            .navigationTitle("Riunioni")
+            .navigationTitle("Meetings")
             .navigationBarTitleDisplayMode(.inline)
             .fullScreenCover(isPresented: $showNewReunion, content: {
                 NewReunionModal()

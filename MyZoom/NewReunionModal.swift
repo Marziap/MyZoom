@@ -15,15 +15,15 @@ struct NewReunionModal: View {
         NavigationStack {
             VStack {
                 List{
-                    Toggle("Video attivo", isOn: $video)
+                    Toggle("Video On", isOn: $video)
                    
-                    Toggle("Utilizza ID della riunione personale (PMI)", isOn: $PMI)
+                    Toggle("Use Personal Meeting ID (PMI)", isOn: $PMI)
                 }
                 
                 Button(action: {
                     
                 }, label: {
-                    Text("Avvia una riunione")
+                    Text("Start a Meeting")
                         .padding()
                         .padding(.horizontal, 90)
                         .bold()
@@ -33,14 +33,14 @@ struct NewReunionModal: View {
                     .padding(.vertical)
                 Spacer(minLength: 470)
             }.padding(.top, 10)
-            .navigationTitle("Avvia una riunione")
+            .navigationTitle("Start a Meeting")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItemGroup(placement: .topBarLeading) {
                     Button(action: {
                         dismiss()
                     }, label: {
-                        Text("Annulla")
+                        Text("Cancel")
                     })
                 }
                

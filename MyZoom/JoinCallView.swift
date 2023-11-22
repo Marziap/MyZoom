@@ -11,8 +11,8 @@ struct JoinCallView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var idRiunione = ""
     @State private var nome = false
-    @State private var buttonText = "Entra con un nome link personale"
-    @State private var placeholder = "Nome del link personale"
+    @State private var buttonText = "Join with a meeting ID"
+    @State private var placeholder = "Personal Link Name"
     @State private var name = ""
     @State private var audio = false
     @State private var video = false
@@ -33,12 +33,12 @@ struct JoinCallView: View {
                    
                 
                 Button(action: {
-                    if(!nome){
-                        buttonText="Entra con ID riunione"
-                        placeholder="ID riunione"
+                    if(nome){
+                        buttonText="Join with a meeting ID"
+                        placeholder="Personal link name"
                     }else{
-                        buttonText="Entra con un nome link personale"
-                        placeholder="Nome del link personale"
+                        buttonText="Join with a personal link name"
+                        placeholder="Meeting ID"
                     }
                     nome.toggle()
                 }, label: {
@@ -55,7 +55,7 @@ struct JoinCallView: View {
                 
                 .padding(.bottom)
                 
-                TextField("Nome", text: $name)
+                TextField("Screen Name", text: $name)
                     .multilineTextAlignment(.center)
                     .padding(.bottom)
                 
@@ -63,9 +63,9 @@ struct JoinCallView: View {
                 Button(action: {
                     
                 }, label: {
-                    Text("Partecipa")
+                    Text("Join")
                         .padding()
-                        .padding(.horizontal, 120)
+                        .padding(.horizontal, 145)
                         .bold()
                         .foregroundStyle(Color.white)
                 }).background(active ? Color.gray: Color.blue)
@@ -73,28 +73,28 @@ struct JoinCallView: View {
                     .padding(.bottom, 2)
                     .disabled(active)
                 
-                Text("Se hai ricevuto un link di invito, tocca di nuovo sul link per entrare nella riunione")
+                Text("If you received an invitation link, tap on the link again to join the meeting")
                     .foregroundStyle(Color.gray)
                     .font(.subheadline)
             }.padding(.horizontal)
                 .padding(.top, 30)
-            .navigationTitle("Entra nella riunione")
+            .navigationTitle("Join Meeting")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItemGroup(placement: .topBarLeading) {
                     Button(action: {
                         dismiss()
                     }, label: {
-                        Text("Annulla")
+                        Text("Cancel")
                     })
                 }
                
             }
             
             List {
-                Section(header: Text("OPZIONE DI ENTRATA")) {
-                    Toggle("Non connetere all'audio", isOn: $audio)
-                    Toggle("Disattiva il mio video", isOn: $video)
+                Section(header: Text("JOIN OPTIONS")) {
+                    Toggle("Don't Connect To Audio", isOn: $audio)
+                    Toggle("Turn Off My Video", isOn: $video)
                 }
             }
             
