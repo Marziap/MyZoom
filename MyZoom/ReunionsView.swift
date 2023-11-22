@@ -34,12 +34,13 @@ struct ReunionsView: View {
                                     .foregroundStyle(Color.white)
                                 
                             }
-                    })
+                        }).accessibilityLabel("New meeting")
                         
                         Text("Nuova riunione")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
+                            .accessibilityHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                         
                     }
                     
@@ -62,11 +63,12 @@ struct ReunionsView: View {
                                     .foregroundStyle(Color.white)
                                 
                             }
-                    })
+                    }).accessibilityLabel("Join meeting")
                         Text("Partecipa")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
+                            .accessibilityHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                     }
                     
                     Spacer()
@@ -88,11 +90,13 @@ struct ReunionsView: View {
                                     .foregroundStyle(Color.white)
                                 
                             }
-                    })
+                    }).accessibilityLabel("Plan meeting")
+                        
                         Text("Pianifica")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
+                            .accessibilityHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                     }
                     
                     Spacer()
@@ -114,11 +118,12 @@ struct ReunionsView: View {
                                     .foregroundStyle(Color.white)
                                 
                             }
-                    })
+                    }).accessibilityLabel("Share")
                         Text("Condividi")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
                             .padding(.top, 3)
+                            .accessibilityHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                     }
                     
                     Spacer()
